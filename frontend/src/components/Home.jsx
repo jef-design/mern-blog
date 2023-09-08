@@ -11,7 +11,7 @@ const Home = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
-      axios.get('http://localhost:5000/api/blog')
+      axios.get('https://blog-api-nine-mocha.vercel.app/api/blog')
         .then(response => {
           dispatch(setAllBlogs(response.data))
         })
