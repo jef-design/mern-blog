@@ -20,7 +20,7 @@ const AddForm = () => {
         }
         else{
             const blog = {title, body}
-            axios.post('http://localhost:5000/api/blog/create', blog)
+            axios.post('https://blog-api-nine-mocha.vercel.app/api/blog/create', blog)
             .then((response)=> {
             dispatch(addBlog(response.data))
             setTitle('')
