@@ -1,5 +1,4 @@
 {
-  "proxy": "https://blog-api-nine-mocha.vercel.app",
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
