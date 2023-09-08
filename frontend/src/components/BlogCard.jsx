@@ -17,7 +17,7 @@ const BlogCard = ({id, title, body, date}) => {
 
   }
     const deleteHandler = () => {
-        axios.delete(`http://localhost:5000/api/blog/${id}`)
+        axios.delete(`https://blog-api-nine-mocha.vercel.app/api/blog/${id}`)
         .then((res)=> {
           dispatch(deleteBlog(id))
           // toast(`${title} has been deleted`)
