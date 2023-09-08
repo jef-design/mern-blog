@@ -28,7 +28,7 @@ const UpdateForm = () => {
         }
         else{
             const blog = {title: utitle, body: ubody}
-            axios.patch(`http://localhost:5000/api/blog/${params.id}`, blog)
+            axios.patch(`https://blog-api-nine-mocha.vercel.app/blog/${params.id}`, blog)
             .then((response)=> {
             // dispatch(addBlog(response.data))
             setTitle('')
