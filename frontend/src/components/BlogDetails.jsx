@@ -8,7 +8,7 @@ const BlogDetails = () => {
     const [blogs, setBlogs] = useState([])
 
     useEffect(() => {
-      axios.get(`https://blog-api-nine-mocha.vercel.app/api/blog/${params.id}`)
+      axios.get(`https://blog-api-drab-delta.vercel.app/${params.id}`)
         .then(response => {
           console.log(response.data);
           setBlogs(response.data)
