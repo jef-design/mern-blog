@@ -28,7 +28,7 @@ const UpdateForm = () => {
         }
         else{
             const blog = {title: utitle, body: ubody}
-            axios.patch(`https://blog-api-nine-mocha.vercel.app/blog/${params.id}`, blog)
+            axios.patch(`https://blog-api-drab-delta.vercel.app/${params.id}`, blog)
             .then((response)=> {
             // dispatch(addBlog(response.data))
             setTitle('')
