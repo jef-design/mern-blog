@@ -11,7 +11,7 @@ const Home = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
-      axios.get('https://blog-api-puh7.onrender.com/')
+      axios.get('https://blog-api-puh7.onrender.com/api/blog')
         .then(response => {
           dispatch(setAllBlogs(response.data))
         })
