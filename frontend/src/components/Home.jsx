@@ -11,7 +11,7 @@ const Home = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
-      axios.get('https://blog-api-drab-delta.vercel.app/api/blog')
+      axios.get('https://blog-api-ivory-iota.vercel.app/api/blog')
         .then(response => {
           dispatch(setAllBlogs(response.data))
         })
