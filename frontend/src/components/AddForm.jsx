@@ -20,7 +20,7 @@ const AddForm = () => {
         }
         else{
             const blog = {title, body}
-            axios.post('https://blog-api-drab-delta.vercel.app//create', blog)
+            axios.post('https://blog-api-drab-delta.vercel.app/create', blog)
             .then((response)=> {
             dispatch(addBlog(response.data))
             setTitle('')
