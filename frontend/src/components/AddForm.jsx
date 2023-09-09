@@ -20,7 +20,7 @@ const AddForm = () => {
         }
         else{
             const blog = {title, body}
-            axios.post('https://blog-api-puh7.onrender.com/create', blog)
+            axios.post('https://blog-api-puh7.onrender.com/api/blog/create', blog)
             .then((response)=> {
             dispatch(addBlog(response.data))
             setTitle('')
