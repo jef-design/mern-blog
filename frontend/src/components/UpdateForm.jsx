@@ -28,7 +28,7 @@ const UpdateForm = () => {
         }
         else{
             const blog = {title: utitle, body: ubody}
-            axios.patch(`https://blog-api-puh7.onrender.com/${params.id}`, blog)
+            axios.patch(`https://blog-api-puh7.onrender.com/api/blog/${params.id}`, blog)
             .then((response)=> {
             // dispatch(addBlog(response.data))
             setTitle('')
