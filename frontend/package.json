@@ -1,5 +1,5 @@
 {
-  "proxy" "https://blog-api-ivory-iota.vercel.app/"
+  "proxy" "https://blog-api-ivory-iota.vercel.app/",
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
