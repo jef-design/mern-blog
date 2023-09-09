@@ -8,7 +8,7 @@ const BlogDetails = () => {
     const [blogs, setBlogs] = useState([])
 
     useEffect(() => {
-      axios.get(`https://blog-api-puh7.onrender.com/${params.id}`)
+      axios.get(`https://blog-api-puh7.onrender.com/api/blog/${params.id}`)
         .then(response => {
           console.log(response.data);
           setBlogs(response.data)
